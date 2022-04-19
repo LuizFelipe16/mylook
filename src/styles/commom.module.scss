@@ -1,0 +1,141 @@
+.page {
+  width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+
+	.navigation {
+		width: 100%;
+		height: 5rem;
+
+		font-size: 1rem;
+		color: var(--gray-800);
+
+		padding: 1rem 3.25rem;
+		position: absolute;
+		top: 10px;
+		left: 0px;
+
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+
+		h3 {
+			color: var(--black);
+			font: 600 1.65rem 'Poppins', sans-serif;
+
+			strong {
+				color: var(--orange);
+			}
+		}
+
+		.links {
+			width: auto;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			gap: 2rem;
+
+			> a {
+				transition: 0.2s;
+	
+				&:hover {
+					color: var(--orange);
+				}
+			}
+		}
+
+		> button {
+			width: 8.5rem;
+			
+			border-radius: 1.5rem;
+			border: 0.12rem solid var(--orange);
+			
+			color: var(--orange);
+			font-size: 1rem;
+			
+			padding: 0.25rem 1.25rem;
+			background-color: var(--white-200);
+			
+			transition: 0.2s;
+			
+			&:hover {
+				background-color: var(--orange);
+				color: var(--white-200);
+				
+				box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+			}
+		}
+	}
+
+	.content {
+		width: 55%;
+		height: 100%;
+
+		padding: 1rem 3.65rem 2rem 3.65rem;
+
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+
+		h1 {
+			font-size: 2.5rem;
+
+			span {
+				color: var(--orange);
+			}
+		}
+
+		hr {
+			margin-top: 1rem;
+			width: 10rem;
+			height: 3px;
+			border: none;
+			border-radius: 5rem;
+			background-color: var(--orange);
+		}
+
+		p {
+			font-weight: 400;
+			color: var(--gray-800);
+			margin-top: 1rem;
+			line-height: 1.7;
+		}
+
+		button {
+			width: 10rem;
+			padding: 1rem;
+			margin-top: 2rem;
+			border: none;
+			border-radius: 5rem;
+			background-color: var(--orange);
+			color: var(--white);
+
+			transition: 0.2s;
+
+			&:hover {
+				filter: brightness(80%);
+			}
+		}
+	}
+
+	.images {
+		flex: 1;
+		overflow: hidden;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			width: 35rem;
+			object-fit: cover;
+		}
+	}
+}

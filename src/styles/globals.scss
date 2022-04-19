@@ -1,0 +1,31 @@
+:root {
+  --white: #fff;
+  --white-200: #edf2fc;
+  --gray-400: #606163;
+  --gray-800: #212121;
+  --orange: #ff4321;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--white-200);
+  overflow-y: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1, h2, p, a, button {
+  font-family: "Poppins", sans-serif;
+}
