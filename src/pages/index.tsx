@@ -29,6 +29,8 @@ export default function Hostcode() {
             Ex dolores dolor deserunt itaque officiis non minus? Nesciunt amet ex a facilis rem!
           </p>
           <button>About more</button>
+
+          <img src="/element.png" alt="Element" />
         </div>
 
         <div className={styles.images}>
